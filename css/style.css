@@ -1,5 +1,6 @@
 :root {
   --playersize: 90px;
+  --black: 0, 0, 0;
 }
 
 /* RESET */
@@ -43,4 +44,14 @@ img {
 .library {
   width: 85%;
   overflow-y: auto;
+
+  .header {
+    height: 90px;
+    position: sticky;
+    top: 0;
+    background-color: rgba(var(--black), 0.7);
+    text-align: right;
+    text-transform: uppercase;
+    line-height: 90px;
+  }
 }
