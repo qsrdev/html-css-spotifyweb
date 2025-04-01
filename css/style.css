@@ -42,11 +42,11 @@ ul {
 
 .player {
   height: var(--playersize);
-  background-color: brown;
+  background-color: rgba(40, 40, 40, 1);
 }
 
 .library {
-  width: 85%;
+  width: calc(100vw - 300px);
   overflow-y: auto;
 
   .header {
@@ -70,15 +70,61 @@ ul {
 /* NAVBAR */
 
 .nav-bar {
-  width: 15%;
+  width: 300px;
   background-color: black;
   padding: 20px 20px;
+  font-size: 0.9rem;
+  color: rgba(111, 111, 111);
 }
 
 .logo {
+  width: 180px;
+}
+
+.playlist {
+  height: calc(100vh - 450px);
+  overflow: auto;
+
+  li {
+    font-weight: bold;
+    padding-bottom: 25px;
+    font-size: 0.9rem;
+  }
+}
+
+.plusbox {
+  background-color: var(--gray);
+  color: #000000;
+  font-size: 30px;
+  padding: 5px 12px;
+  margin-right: 10px;
 }
 
 /* Utility */
 .flex {
   display: flex;
+}
+
+.font-white {
+  color: white;
+}
+
+.font-gray {
+  color: var(--gray);
+}
+
+.my-10px {
+  margin-bottom: 10px;
+}
+
+.my-20px {
+  margin-bottom: 20px;
+}
+
+.py-10px {
+  padding-bottom: 10px;
+}
+
+.py-20px {
+  padding-bottom: 20px;
 }
