@@ -1,6 +1,8 @@
 :root {
   --playersize: 90px;
   --black: 0, 0, 0;
+  --gray: rgba(163, 163, 163, 1);
+  --bgconsole: rgba(20, 25, 34, 1);
 }
 
 /* RESET */
@@ -8,37 +10,39 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
 }
 
 img {
   max-width: 100%;
 }
 
-/* COMMON */
-/* LAYOUT */
-
-.flex {
-  display: flex;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
+ul {
+  color: var(--gray);
+}
+
+/* COMMON */
 .wrapper {
   width: 100%;
   height: 100vh;
 }
 
+/* CONSOLE */
+
 .console {
-  background-color: violet;
+  background-color: var(--bgconsole);
   height: calc(100% - var(--playersize));
 }
 
 .player {
   height: var(--playersize);
   background-color: brown;
-}
-
-.nav-bar {
-  width: 15%;
-  background-color: aquamarine;
 }
 
 .library {
@@ -54,4 +58,27 @@ img {
     text-transform: uppercase;
     line-height: 90px;
   }
+
+  ul {
+    justify-content: center;
+    gap: 23px;
+    padding: 23px 0px;
+    text-transform: uppercase;
+  }
+}
+
+/* NAVBAR */
+
+.nav-bar {
+  width: 15%;
+  background-color: black;
+  padding: 20px 20px;
+}
+
+.logo {
+}
+
+/* Utility */
+.flex {
+  display: flex;
 }
