@@ -141,6 +141,21 @@ body {
   width: calc((100% - 55px) / 6);
 }
 
+.greenline-hor {
+  position: relative;
+  padding-bottom: 6px;
+}
+
+.greenline-hor::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(173, 255, 47, 1);
+  width: 30%;
+  height: 3px;
+  bottom: 0;
+  left: 35px;
+}
+
 /*************************************************
     NAVBAR
  *************************************************/
@@ -152,12 +167,26 @@ body {
   color: rgba(111, 111, 111);
 }
 
+.greenline-ver {
+  position: relative;
+}
+
+.greenline-ver::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(173, 255, 47, 1);
+  width: 3px;
+  height: 90%;
+  bottom: 0;
+  left: -18px;
+}
+
 .logo {
   width: 180px;
 }
 
 .playlist {
-  height: calc(100vh - 500px);
+  height: calc(100vh - 475px);
   overflow: auto;
 
   li {
@@ -189,6 +218,13 @@ body {
   border: 1px solid white;
 }
 
+.profile {
+  /* margin-top: 10px;
+  margin-right: 10px; */
+  background-color: var(--gray);
+  border-radius: 50%;
+}
+
 /*************************************************
     UTILITIES
  *************************************************/
@@ -196,8 +232,20 @@ body {
   display: flex;
 }
 
+.align-center {
+  align-items: center;
+}
+
 .flex-column {
   flex-direction: column;
+}
+
+.highlight {
+  color: inherit;
+}
+
+.highlight:hover {
+  color: white;
 }
 
 .icon {
@@ -223,6 +271,10 @@ body {
 
 .my-30px {
   margin-bottom: 30px;
+}
+
+.mt-10px {
+  margin-top: 10px;
 }
 
 .mt-20px {
