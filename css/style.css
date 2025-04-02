@@ -37,6 +37,10 @@ ul {
   color: var(--gray);
 }
 
+li:hover {
+  color: white;
+}
+
 /*************************************************
     tYPOGRAPHY
  *************************************************/
@@ -99,8 +103,34 @@ body {
   cursor: pointer;
 }
 
+.upgrade:hover {
+  transform: scale(1.1);
+}
+
 .container {
   padding: 20px;
+}
+
+.cover-container {
+  position: relative;
+}
+
+.cover-container .play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  display: none;
+  font-size: 50px;
+}
+
+.hover-play:hover {
+  opacity: 0.4;
+}
+
+.cover-container:hover .play {
+  display: inline;
 }
 
 .cover-display {
@@ -108,7 +138,6 @@ body {
 }
 
 .col {
-  /* border: 2px solid white; */
   width: calc((100% - 55px) / 6);
 }
 
@@ -128,7 +157,7 @@ body {
 }
 
 .playlist {
-  height: calc(100vh - 450px);
+  height: calc(100vh - 500px);
   overflow: auto;
 
   li {
@@ -138,12 +167,26 @@ body {
   }
 }
 
-.plusbox {
+/* .plusbox {
   background-color: var(--gray);
   color: #000000;
   font-size: 30px;
   padding: 5px 12px;
   margin-right: 10px;
+} */
+
+.btnplus {
+  border: 1px solid rgba(111, 111, 111);
+  background-color: rgba(111, 111, 111);
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+}
+
+.btnplus:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid white;
 }
 
 /*************************************************
@@ -151,6 +194,15 @@ body {
  *************************************************/
 .flex {
   display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
 }
 
 .font-white {
@@ -171,6 +223,10 @@ body {
 
 .my-30px {
   margin-bottom: 30px;
+}
+
+.mt-20px {
+  margin-top: 20px;
 }
 
 .py-10px {
