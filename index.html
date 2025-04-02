@@ -17,6 +17,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- LINK FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poly:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="wrapper">
@@ -47,6 +55,7 @@
             >
           </h4>
 
+          <!-- NAV BAR PLAYLIST -->
           <ul class="playlist">
             <li><a href="">Nome Playlist</a></li>
             <li><a href="">Nome Playlist</a></li>
@@ -55,7 +64,9 @@
             <li><a href="">Nome Playlist</a></li>
             <li><a href="">Nome Playlist</a></li>
           </ul>
+          <!-- END NAV BAR PLAYLIST -->
 
+          <!-- USER FOOTER -->
           <div class="font-gray">
             <i class="fa-regular fa-circle-down my-10px"></i
             ><strong> Installa App</strong>
@@ -67,7 +78,11 @@
 
         <!-- begin library -->
         <div class="library">
-          <div class="header font-white">effettua upgrade</div>
+          <!-- STICKY UPGRADE HEADER -->
+          <div class="header font-white">
+            <button class="upgrade"><h5>effettua l'upgrade</h5></button>
+          </div>
+          <!-- LIBRARY NAVIGATION LIST -->
           <ul class="flex">
             <li><a href="">in evidenza</a></li>
             <li><a href="">podcast</a></li>
@@ -77,12 +92,122 @@
             <li><a href="">scopri</a></li>
           </ul>
 
-          <span class="font-white"
-            >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Voluptatem non corporis excepturi eveniet quidem, asperiores totam
-            rem odio blanditiis similique rerum maiores molestiae amet omnis
-            quisquam dolorem facere pariatur sit.</span
-          >
+          <!-- PLAY MUSIC SECTION -->
+          <div class="container">
+            <!-- RECENTLY PLAYED -->
+            <h2 style="margin-bottom: 30px" class="font-white">
+              Recentley played
+            </h2>
+            <div class="cover-display flex my-30px">
+              <div class="col">
+                <a href=""
+                  ><img class="my-20px" src="./img/metal_lifting.jpg" alt=""
+                /></a>
+                <h4 class="font-white my-10px" style="text-align: center">
+                  Heavy Metal
+                </h4>
+                <h5 class="font-gray" style="text-align: center">Subtitle</h5>
+              </div>
+              <div class="col">
+                <a href=""
+                  ><img class="my-20px" src="./img/stranger.jpeg" alt=""
+                /></a>
+                <h4 class="font-white my-10px" style="text-align: center">
+                  Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)
+                </h4>
+                <h5 class="font-gray" style="text-align: center">
+                  Kyle Dixon & Michael Stein
+                </h5>
+              </div>
+              <div class="col">
+                <a href=""
+                  ><img class="my-20px" src="./img/aquietplace.jpeg" alt=""
+                /></a>
+                <h4 class="font-white my-10px" style="text-align: center">
+                  A queit place
+                </h4>
+                <h5 class="font-gray" style="text-align: center">Subtitle</h5>
+              </div>
+              <div class="col">
+                <a href=""
+                  ><img class="my-20px" src="./img/split.jpeg" alt=""
+                /></a>
+                <h4 class="font-white my-10px" style="text-align: center">
+                  Split
+                </h4>
+                <h5 class="font-gray" style="text-align: center">Subtitle</h5>
+              </div>
+              <div class="col">
+                <a href=""
+                  ><img class="my-20px" src="./img/cure.jpeg" alt=""
+                /></a>
+                <h4 class="font-white my-10px" style="text-align: center">
+                  A Cure for wellness
+                </h4>
+                <h5 class="font-gray" style="text-align: center">Subtitle</h5>
+              </div>
+              <div class="col">
+                <a href=""
+                  ><img class="my-20px" src="./img/sinister.jpeg" alt=""
+                /></a>
+                <h4 class="font-white my-10px" style="text-align: center">
+                  Sinister
+                </h4>
+                <h5 class="font-gray" style="text-align: center">Subtitle</h5>
+              </div>
+            </div>
+            <!-- END RECENTLY PLAYED -->
+
+            <!-- CREATER FOR  -->
+            <h2 class="font-white my-10px">Creato per John Doe</h2>
+            <h5 class="font-gray my-30px">
+              Più ascolti, più accurati saranno i suggerimenti.
+            </h5>
+            <div class="cover-display flex my-30px">
+              <div class="col">
+                <a href=""
+                  ><img class="my-20px" src="./img/radar.jpeg" alt=""
+                /></a>
+                <h4 class="font-white my-10px" style="text-align: center">
+                  Release Radar
+                </h4>
+              </div>
+              <div class="col">
+                <a href=""
+                  ><img class="my-20px" src="./img/mixdaily.jpeg" alt=""
+                /></a>
+                <h4 class="font-white my-10px" style="text-align: center">
+                  Daily Mix 1
+                </h4>
+              </div>
+            </div>
+            <!-- END CREATED FOR -->
+
+            <!-- POPULAR ARTISTS -->
+            <h2 class="font-white my-10px">Artisti più popolari</h2>
+            <h5 class="font-gray my-30px">
+              Più ascolti, più accurati saranno i suggerimenti.
+            </h5>
+            <div class="cover-display flex my-30px">
+              <div class="col">
+                <a href=""
+                  ><img class="my-20px circle" src="./img/youg.jpeg" alt=""
+                /></a>
+                <h4 class="font-white my-10px" style="text-align: center">
+                  Lana Del Rey
+                </h4>
+              </div>
+              <div class="col">
+                <a href=""
+                  ><img class="my-20px circle" src="./img/einaudi.jpeg" alt=""
+                /></a>
+                <h4 class="font-white my-10px" style="text-align: center">
+                  Ludovico Einaudi
+                </h4>
+              </div>
+            </div>
+            <!-- END POPULAR ARTISTS -->
+          </div>
         </div>
       </div>
 
