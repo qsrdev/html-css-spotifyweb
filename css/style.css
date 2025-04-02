@@ -186,7 +186,7 @@ body {
 }
 
 .playlist {
-  height: calc(100vh - 475px);
+  height: calc(100vh - 480px);
   overflow: auto;
 
   li {
