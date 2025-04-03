@@ -1,0 +1,63 @@
+/*************************************************
+    Responsive
+ *************************************************/
+@media screen and (max-width: 890px) {
+  .col {
+    width: calc((100% - 35px) / 4);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .col {
+    width: calc((100% - 10px) / 2);
+  }
+
+  .right-footer {
+    display: none;
+  }
+
+  .center-footer {
+    width: 100%;
+  }
+
+  .left-footer {
+    width: 200px;
+    .icons {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  :root {
+    --navbarsize: 50px;
+  }
+
+  .nav-bar {
+    padding: 10px 10px;
+  }
+
+  .logo-big {
+    display: none;
+  }
+
+  .logo-small {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .playlist-menu {
+    display: none;
+  }
+
+  /* .user-footer {
+    position: relative;
+    min-height: 625px;
+  }
+
+  .test {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  } */
+}

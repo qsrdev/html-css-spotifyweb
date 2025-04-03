@@ -31,8 +31,13 @@
       <div class="console flex">
         <!-- begin sidebar navigation -->
         <div class="nav-bar">
-          <div class="logo my-20px">
+          <div class="logo-big my-20px">
             <a href=""><img src="./img/logo.svg" alt="Spotify Logo" /></a>
+          </div>
+          <div class="logo-small">
+            <a href=""
+              ><img src="./img/logo-small.svg" alt="Spotify Logo Small"
+            /></a>
           </div>
 
           <ul class="my-20px flex flex-column">
@@ -45,7 +50,7 @@
                     src="./img/home.svg"
                     alt="Home icon"
                   />
-                  Home</a
+                  <span class="playlist-menu">Home</span></a
                 >
               </div>
             </li>
@@ -57,7 +62,7 @@
                   src="./img/search.svg"
                   alt="Search icon"
                 />
-                Cerca</a
+                <span class="playlist-menu">Cerca</span></a
               >
             </li>
             <li class="my-10px">
@@ -68,45 +73,57 @@
                   src="./img/libreria.svg"
                   alt=""
                 />
-                La tua libreria</a
+                <span class="playlist-menu">La tua libreria</span></a
               >
             </li>
           </ul>
-          <h4 class="font-white py-20px">PLAYLIST</h4>
 
-          <h4 class="font-gray highlight py-20px">
-            <a href="">
-              <input
-                class="btnplus"
-                type="button"
-                value="+"
-                style="font-size: 1.4rem; font-weight: bold"
-              />
-              <span>Crea Playlist</span></a
-            >
-          </h4>
+          <div class="playlist-menu">
+            <h4 class="font-white py-20px">PLAYLIST</h4>
 
-          <!-- NAV BAR PLAYLIST -->
-          <ul class="playlist">
-            <li><a href="">Nome Playlist</a></li>
-            <li><a href="">Nome Playlist</a></li>
-            <li><a href="">Nome Playlist</a></li>
-            <li><a href="">Nome Playlist</a></li>
-            <li><a href="">Nome Playlist</a></li>
-            <li><a href="">Nome Playlist</a></li>
-          </ul>
+            <h4 class="font-gray highlight py-20px">
+              <a href="">
+                <input
+                  class="btnplus"
+                  type="button"
+                  value="+"
+                  style="font-size: 1.4rem; font-weight: bold"
+                />
+                <span>Crea Playlist</span></a
+              >
+            </h4>
+
+            <!-- NAV BAR PLAYLIST -->
+            <ul class="playlist">
+              <li><a href="">Nome Playlist</a></li>
+              <li><a href="">Nome Playlist</a></li>
+              <li><a href="">Nome Playlist</a></li>
+              <li><a href="">Nome Playlist</a></li>
+              <li><a href="">Nome Playlist</a></li>
+              <li><a href="">Nome Playlist</a></li>
+            </ul>
+          </div>
           <!-- END NAV BAR PLAYLIST -->
 
           <!-- USER FOOTER -->
-          <div class="font-gray highlight">
-            <i class="fa-regular fa-circle-down my-10px"></i
-            ><strong> Installa App</strong>
-          </div>
-          <hr />
-          <div class="font-white flex align-center mt-10px">
-            <img class="icon profile" src="./img/profile.svg" alt="" />
-            <div style="margin-left: 15px; font-weight: bold; font-size: 1rem">
-              John Doe
+          <div class="user-footer">
+            <div class="test">
+              <div class="font-gray highlight">
+                <i class="fa-regular fa-circle-down my-10px"></i
+                ><span class="playlist-menu"
+                  ><strong> Installa App</strong></span
+                >
+              </div>
+              <hr />
+              <div class="font-white flex align-center mt-10px">
+                <img class="icon profile" src="./img/profile.svg" alt="" />
+                <div
+                  class="playlist-menu"
+                  style="margin-left: 15px; font-weight: bold; font-size: 1rem"
+                >
+                  John Doe
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -120,7 +137,9 @@
           </div>
           <!-- LIBRARY NAVIGATION LIST -->
           <ul class="flex">
-            <li><a class="greenline-hor" href="">in evidenza</a></li>
+            <li class="active">
+              <a class="greenline-hor" href="">in evidenza</a>
+            </li>
             <li><a href="">podcast</a></li>
             <li><a href="">classifiche</a></li>
             <li><a href="">generi e mood</a></li>
@@ -354,9 +373,19 @@
                 <h5><a class="highlight underline" href="#">Brano Nome</a></h5>
               </div>
             </div>
-            <div class="flex" style="gap: 15px">
-              <a href="#"><i class="highlight fa-regular fa-heart"></i></a>
-              <a href="#"><i class="highlight fa-regular fa-folder"></i></a>
+            <div class="icons" style="gap: 15px">
+              <a href="#"
+                ><i
+                  style="padding-left: 10px"
+                  class="highlight fa-regular fa-heart"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  style="padding-left: 10px"
+                  class="highlight fa-regular fa-folder"
+                ></i
+              ></a>
             </div>
           </div>
           <div class="center-footer flex">
